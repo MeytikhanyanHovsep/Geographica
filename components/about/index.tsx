@@ -45,7 +45,7 @@ export default function About({ lang }: Props) {
         <section className="py-30 -mt-30">
             <div className="container grid grid-cols-2 gap-10 items-center">
                 <div className="relative ml-[50px] h-[200px]">
-                    {cubes.map((e, i) => (
+                    {/* {cubes.map((e, i) => (
                         <TechBlock
                             key={i}
                             color={e.color}
@@ -53,7 +53,7 @@ export default function About({ lang }: Props) {
                             isBottom={getStyles(e)["isBottom"]}
                             logoUrl={e.logo}
                         />
-                    ))}
+                    ))} */}
                 </div>
                 <div className="flex flex-col">
                     <Title index={1}>{lang ? "About me" : "О себе"}</Title>

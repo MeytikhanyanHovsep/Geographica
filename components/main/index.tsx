@@ -4,6 +4,7 @@ import HeroTypewriter from "./heroTypewriter";
 import Globe from "./globe";
 import Button from "../button";
 import InteractiveGrid from "./gridArea";
+import Image from "next/image";
 
 type Props = { lang: boolean };
 
@@ -49,8 +50,15 @@ export default function Main({ lang }: Props) {
                         </Button>
                     </div>
 
-                    <div className="h-full  max-w-full relative flex items-center">
+                    <div className="h-full  max-w-full justify-end relative flex items-center">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[25%] aspect-square bg-radial from-primary/40 to-transparent blur-[50px] scale-[4] opacity-100 pointer-events-none will-change-transform"></div>
+                        <Image
+                            src="/images/main.png"
+                            alt="x"
+                            className="min-w-[500px] object-contain"
+                            width={300}
+                            height={300}
+                        />
                     </div>
                 </div>
             </main>

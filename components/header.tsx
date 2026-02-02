@@ -47,16 +47,8 @@ export default function Header({ lang, changeLang }: Props) {
     ];
 
     return (
-        <motion.header className="w-full will-change-transform z-200 fixed top-0 left-0">
-            <motion.div
-                className="absolute inset-0 -z-1 backdrop-blur-xl will-change-opacity"
-                initial={{ opacity: 0 }}
-                animate={{
-                    opacity: isScrolled > 50 ? 1 : 0,
-                }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-            />
-            <div className="container relative flex z-20 justify-between gap-[30px] py-[30px]! items-center">
+        <motion.header className="w-full will-change-transform z-200 fixed top-0 py-5 left-0">
+            <div className="container  relative flex z-20 justify-between border border-[white] rounded-full gap-[30px] py-[10px] items-center backdrop-blur-sm">
                 <Link
                     href="/"
                     className="nunito flex items-center max-2xl:text-[23px] text-[25px] capitalize"

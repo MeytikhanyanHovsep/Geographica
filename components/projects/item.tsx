@@ -15,7 +15,6 @@ export default function Item({ img, link, name }: Props) {
             <motion.div
                 whileHover={{
                     y: -10,
-                    scale: 1.02,
                     translateY: -5,
                 }}
                 style={{ perspective: 1000 }}
